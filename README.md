@@ -2,6 +2,7 @@
 Crear servidor de monitorización con grafana/prometheus/node_exporter y nginx
 
 *Instalar prometheus y depenedencias sin recomendados para evitar apache2*
+
 `sudo apt install --no-install-recommends prometheus lighttpd gsmartcontrol smart-notifier mailutils prometheus-node-exporter -y`
 
 *Reiniciar deamons e iniciar el servicio*
@@ -12,6 +13,7 @@ sudo systemctl status prometheus.service
 ```
 
 *Instalar las dependencias necesarias para el uso de Grafana*
+
 `sudo apt-get install -y apt-transport-https software-properties-common wget`
 
 *Instalar los repositorios de Grafana y actualizar nuestros repositorios*
@@ -20,6 +22,7 @@ wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
 ```
 *Instalación de grafana*
+
 `sudo apt install grafana`
 
 *Reiniciar deamons e iniciar el servicio*
