@@ -36,7 +36,8 @@ sudo systemctl status prometheus.service
 ```
 
 *Para que prometheus recoja la informacion de nodeexporter tendremos que tener el fichero /etc/prometheus/prometheus.yml*
-Configuración de [prometheus.yml]([https://pages.github.com/](https://github.com/dpeirob/grafana/blob/main/prometheus.yml).
+Configuración de [prometheus.yml](https://github.com/dpeirob/grafana/blob/main/prometheus.yml).
+
 *Entrar a Grafana desde el navegador*
 **http://localhost:3000**
 
