@@ -35,16 +35,8 @@ sudo systemctl start prometheus.service
 sudo systemctl status prometheus.service
 ```
 
-*Para que prometheus recoja la informacion de nodeexporter tendremos que tener el fichero /etc/prometheus/prometheus/yml*
- ```
-  static_configs:
-      - targets: ['localhost:9090']
-  - job_name: node
-    # If prometheus-node-exporter is installed, grab stats about the local
-    # machine by default.
-    static_configs:
-      - targets: ['localhost:9100']
-```
+*Para que prometheus recoja la informacion de nodeexporter tendremos que tener el fichero /etc/prometheus/prometheus.yml*
+Configuración de [prometheus.yml]([https://pages.github.com/](https://github.com/dpeirob/grafana/blob/main/prometheus.yml).
 *Entrar a Grafana desde el navegador*
 **http://localhost:3000**
 
