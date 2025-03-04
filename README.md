@@ -13,6 +13,7 @@ sudo apt install --no-install-recommends prometheus lighttpd gsmartcontrol smart
 *Reiniciar deamons e iniciar el servicio*
 ```
 sudo systemctl daemon-reload
+sudo systemctl enable prometheus.service
 sudo systemctl start prometheus.service
 sudo systemctl status prometheus.service
 ```
@@ -41,6 +42,7 @@ sudo apt install grafana -y
 *Reiniciar deamons e iniciar el servicio*
 ```
 sudo systemctl daemon-reload
+sudo systemctl start grafana-server.service
 sudo systemctl start grafana-server.service
 sudo systemctl status grafana-server.service
 ```
