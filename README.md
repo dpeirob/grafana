@@ -42,7 +42,7 @@ sudo apt install grafana -y
 *Reiniciar deamons e iniciar el servicio*
 ```
 sudo systemctl daemon-reload
-sudo systemctl start grafana-server.service
+sudo systemctl enable grafana-server.service
 sudo systemctl start grafana-server.service
 sudo systemctl status grafana-server.service
 ```
